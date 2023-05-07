@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title id="timertime">Flash Focus</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+
+
+
+
+
+<!--TITLE LANDING PAGE (1)-->
+<div class="panel maintitle" data-color="grey">
+    <h2>Flash Focus</h2>
+  </div>
+
+
+
+
+
+
+<!--POMODORO TIMER (2)-->
+<div class="panel pomodoroWhole" data-color="red">
+    <div>
+        <div class="wholeModeControl">
+        <button class="modeChangeButtons" id="pomodoro-btn" onclick="audio.play();">Pomodoro</button>
+        <button class="modeChangeButtons" id="short-break-btn" onclick="audio.play();">Short Break</button>
+        <button class="modeChangeButtons" id="long-break-btn" onclick="audio.play();">Long Break</button> 
+      </div>
+      
+  <div id="time" class="countdownTimer" >25:00</div>
+    
+      <div class="wholeTimeControl">
+      <button class="timeControlButtons" id="start" onclick="audio.play();">Start</button>
+      <button class="timeControlButtons" id="stop" onclick="audio.play();">Stop</button>
+      <button class="timeControlButtons" id="reset" onclick="audio.play();">Reset</button> 
+    </div>
+    <script src="scripts/pomotimer.js"></script>
+</div>
+
+
+
+
+
+<div class="panel" data-color="green">
+    <div class="todo-list">
+        <form>
+          <input type="text" id="task-title" placeholder="Task" />
+          <input type="datetime-local" id="task-due-date" />
+          <button type="button" id="add-task-btn">Add Task</button>
+        </form>
+        <ul id="task-list"></ul>
+        <button type="button" id="delete-completed-tasks-btn">Delete Tasks</button>
+      </div>
+    <script src="scripts/todo.js"></script> 
+</div>
+
+
+
+
+
+<div class="panel" data-color="indigo">
+</div>
+
+
+
+
+
+<div class="panel" data-color="blue">
+</div>
+
+
+
+
+<div class="panel" data-color="orange">
+</div>
+
+
+
+
+<div class="panel" data-color="yellow">
+</div>
+
+
+
+
+<div class="panel" data-color="grey">
+</div>
+
+
+
+
+<div class="panel" data-color="violet">
+</div>
+
+
+
+
+
+
+
+
+  <script src='https://code.jquery.com/jquery-2.2.4.min.js'></script><script  src="scripts/main.js"></script>
+
+</body>
+</html>

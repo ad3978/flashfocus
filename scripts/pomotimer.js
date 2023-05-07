@@ -17,7 +17,7 @@ longBreakBtn.addEventListener("click", startLongBreak);
 pomodoroBtn.addEventListener("click", startPomodoro);
 
 const audio = new Audio();
-  audio.src = "timer-button.mp3"
+  audio.src = "assets/timer-button.mp3"
 
 let timer;
 let seconds = 1500; // 25 minutes 
